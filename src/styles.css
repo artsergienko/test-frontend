@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .dropdown {
+        @apply relative w-fit px-4 py-2;
+    }
+    .dropdown.hovered {
+        @apply [&:hover>ul]:block;
+    }
+    .dropdown__items {
+        @apply list-none absolute w-full right-0 top-full mt-[1px] shadow-md hidden text-center;
+    }
+    .dropdown__item {
+        @apply py-2 bg-white hover:text-gray-400 active:bg-gray-200;
+    }
+  }
