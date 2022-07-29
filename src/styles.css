@@ -10,7 +10,7 @@
         @apply [&:hover>ul]:block;
     }
     .dropdown__items {
-        @apply list-none absolute w-full right-0 top-full mt-[1px] shadow-md hidden text-center;
+        @apply list-none absolute w-full right-0 top-full shadow-lg hidden text-center border-2 border-gray-300;
     }
     .dropdown__item {
         @apply py-2 bg-white hover:text-gray-400 active:bg-gray-200;
