@@ -9,16 +9,35 @@
 </head>
 <body>
     <!-- Mobile navigation -->
-        <nav class="w-full bg-white related md:hidden">
-            <div class="fixed w-full bg-white shadow-md">
+    <!-- <div class="fixed top-0 bottom-0 left-0 right-0 z-10 h-screen px-2 py-2 bg-white">
+      <div class="flex flex-row items-center justify-end">
+        <button>
+          <span class="block w-10 h-10 cursor-pointer">
+            <img src="img/close.svg" alt="Menu close icon" />
+          </span>
+        </button>
+      </div>
+    </div> -->
 
+    <nav class="w-full bg-white related md:hidden">
+        <div class="fixed w-full bg-white shadow-md">
+            <div class="flex flex-row items-center justify-between p-4 md:hidden">
+                <a href="">
+                    <img src="./img/logotype.svg" alt="">
+                </a>
+                <button >
+                    <span class="block cursor-pointer">
+                        <img src="./img/burger.svg" alt="menu open">
+                    </span>
+                </button>
             </div>
-        </nav>
+        </div>
+    </nav>
     <!-- Desktop navigation -->
-    <nav class="w-full h-36 bg-white shadow-md hidden">
+    <nav class="hidden w-full h-36 bg-white shadow-md md:block">
         <div class="flex flex-row justify-between right-28 pt-6 mx-40">
             <a href="">
-                <img src="./img/logotype.png" alt="logotype">
+                <img src="./img/logotype.svg" alt="logotype">
             </a>
         
             <a href="">
@@ -33,14 +52,14 @@
                 </a>
                 <img class="pt-1 pl-2" src="./img/arrowdown.svg" alt="icon nav">
         
-                <ul class="dropdown__items text-sm pt-5">
+                <ul class="dropdown__items text-sm pt-5 right-0">
                     <li class="dropdown__item flex flex-row justify-between border-b-2 border-gray-100 px-4">
                         Post Header 1
-                        <img src="./img/arrowright.svg" alt="icon nav">
+                        <img class="pl-9" src="./img/arrowright.svg" alt="icon nav">
                     </li>
                     <li class="dropdown__item flex flex-row justify-between border-b-2 border-gray-100 px-4">
-                        Item 2
-                        <img src="./img/arrowright.svg" alt="icon nav">
+                        Post Header Post 2
+                        <img class="pl-9" src="./img/arrowright.svg" alt="icon nav">
                     </li>
                     <li class="dropdown__item flex flex-row justify-between border-b-2 border-gray-100 px-4">
                         Item 3
@@ -145,7 +164,7 @@
         </div>    
     </nav>
 
-    <section class="md:mx-40 md:mt-32">
+    <section class="md:m-12 pt-24">
         <div class="grid grid-cols-1 sm:grid sm:grid-cols-2 md:grid md:grid-cols-3">
             <div class="m-5">
                 <img src="./img/photo_one.jpg" alt="">
