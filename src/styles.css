@@ -4,15 +4,15 @@
 
 @layer components {
     .dropdown {
-        @apply relative w-fit px-4 py-2;
+        @apply relative w-fit px-4 py-2 pt-1;
     }
     .dropdown.hovered {
         @apply [&:hover>ul]:block;
     }
     .dropdown__items {
-        @apply list-none absolute w-full right-0 top-full shadow-lg hidden text-center border-2 border-gray-300;
+        @apply list-none absolute w-full right-0 top-full shadow-lg hidden text-center;
     }
     .dropdown__item {
-        @apply py-2 bg-white hover:text-gray-400 active:bg-gray-200;
+        @apply py-2 bg-white hover:text-gray-400 active:bg-gray-200  border-2 border-gray-100;
     }
   }
