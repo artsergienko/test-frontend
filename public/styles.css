@@ -765,20 +765,12 @@ video {
   padding-left: 2.25rem;
 }
 
-.pl-1 {
-  padding-left: 0.25rem;
-}
-
-.pt-12 {
-  padding-top: 3rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
-}
-
 .pt-24 {
   padding-top: 6rem;
+}
+
+.pl-1 {
+  padding-left: 0.25rem;
 }
 
 .text-center {
@@ -848,10 +840,6 @@ video {
 @media (min-width: 768px) {
   .md\:m-12 {
     margin: 3rem;
-  }
-
-  .md\:m-5 {
-    margin: 1.25rem;
   }
 
   .md\:block {
