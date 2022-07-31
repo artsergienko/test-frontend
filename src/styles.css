@@ -2,17 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
+  @layer components {
     .dropdown {
-        @apply relative px-4 py-2 pt-1;
+      @apply relative w-fit px-4 py-3;
     }
+    
     .dropdown.hovered {
-        @apply [&:hover>ul]:block;
+      @apply [&:hover>ul]:block;
     }
+    
     .dropdown__items {
-        @apply whitespace-nowrap list-none absolute  right-0 top-full shadow-lg hidden text-center;
+      @apply list-none absolute w-max right-0 top-full mt-[1px] hidden shadow-md text-center;
     }
     .dropdown__item {
-        @apply py-2 bg-white hover:text-gray-400 ;
+      @apply py-2 px-4 bg-white hover:text-gray-400 whitespace-nowrap cursor-pointer flex flex-row justify-between;
     }
-  }
+    .dropdown__item img {
+      @apply ml-4;
+    }
+}
