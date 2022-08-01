@@ -1,7 +1,7 @@
 {
-  "name": "tes-frontend",
+  "name": "artsergienko.dev",
   "version": "1.0.0",
-  "description": "",
+  "description": "test frontend",
   "main": "index.js",
   "scripts": {
     "watch": "tailwindcss build -i ./src/styles.css -o ./public/styles.css --watch"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/artsergienko/tes-frontend.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Artem Sergienko",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/artsergienko/tes-frontend/issues"
